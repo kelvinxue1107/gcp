@@ -1,12 +1,12 @@
 provider "google" {
   project = "ccs-backup-8b03e6e5"
-  region  = "us-central1"
-  zone    = "us-central1-c"
+  region  = "asia-northeast1"
+  zone    = "asia-northeast1-a"
 }
 
 resource "google_compute_instance" "vm_instance" {
   name         = "backup-osaka-01"
-  machine_type = "n1-stand-1"
+  machine_type = "n1-standard-1"
 
   boot_disk {
     initialize_params {
